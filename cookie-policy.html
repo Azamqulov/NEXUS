@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çerez Politikası | NEXUS</title>
+    <meta name="description" content="NEXUS Çerez Politikası - Web sitemizde kullanılan çerezler ve diğer izleme teknolojileri hakkında bilgi edinin.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cookie-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+        }
+        
+        .cookie-content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--color-primary);
+        }
+        
+        .cookie-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .cookie-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        .cookie-content p {
+            margin-bottom: 1rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+        }
+        
+        .cookie-content ul, .cookie-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--color-text-muted);
+        }
+        
+        .cookie-content ul li, .cookie-content ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-content a {
+            color: var(--color-primary);
+            text-decoration: underline;
+            transition: color var(--transition-medium);
+        }
+        
+        .cookie-content a:hover {
+            color: var(--color-secondary);
+        }
+        
+        .cookie-content .highlight-box {
+            background-color: rgba(99, 102, 241, 0.1);
+            border-left: 4px solid var(--color-primary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .cookie-content .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .cookie-table th, .cookie-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .cookie-table th {
+            font-weight: 600;
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+        
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--color-text-muted);
+            transition: color var(--transition-medium);
+        }
+        
+        .back-link:hover {
+            color: var(--color-primary);
+        }
+        
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        
+        .last-updated {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+            font-style: italic;
+            margin-top: 2rem;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-bg"></div>
+
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">NEXUS</span>
+                    <span class="logo-dot"></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#trends" class="nav-link">Trendler</a></li>
+                    <li class="nav-item"><a href="index.html#turkey" class="nav-link">Türkiye</a></li>
+                    <li class="nav-item"><a href="index.html#ai" class="nav-link">Yapay Zeka</a></li>
+                    <li class="nav-item"><a href="index.html#metaverse" class="nav-link">Metaverse</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html#trends" class="mobile-nav-link">Trendler</a></li>
+            <li class="mobile-nav-item"><a href="index.html#turkey" class="mobile-nav-link">Türkiye</a></li>
+            <li class="mobile-nav-item"><a href="index.html#ai" class="mobile-nav-link">Yapay Zeka</a></li>
+            <li class="mobile-nav-item"><a href="index.html#metaverse" class="mobile-nav-link">Metaverse</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">İletişim</a></li>
+        </ul>
+        <div class="mobile-social">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+            </a>
+            
+            <div class="section-header">
+                <h1 class="section-title">Çerez Politikası</h1>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="cookie-content">
+                <h2>1. Çerezler Nedir?</h2>
+                <p>Çerezler, web sitemizi ziyaret ettiğinizde cihazınıza (bilgisayar, tablet veya mobil cihaz) yerleştirilen küçük metin dosyalarıdır. Bu dosyalar, web sitemizi her ziyaret ettiğinizde veya sayfalar arasında gezindiğinizde tarayıcınız tarafından gönderilir. Çerezler, web sitemizin düzgün çalışmasını sağlamak, kullanıcı deneyiminizi iyileştirmek ve size daha kişiselleştirilmiş bir hizmet sunmak için kullanılır.</p>
+                
+                <div class="highlight-box">
+                    <p>Bu Çerez Politikası, NEXUS web sitesinde kullanılan çerezleri ve benzer teknolojileri açıklamaktadır. Bu politika, hangi çerezleri kullandığımızı, bu çerezlerin ne için kullanıldığını ve çerezleri nasıl kontrol edebileceğinizi anlamanıza yardımcı olacaktır.</p>
+                </div>
+                
+                <h2>2. Kullandığımız Çerez Türleri</h2>
+                <p>Web sitemizde aşağıdaki çerez türlerini kullanıyoruz:</p>
+                
+                <h3>2.1. Zorunlu Çerezler</h3>
+                <p>Bu çerezler, web sitemizin düzgün çalışması için gereklidir ve sistemlerimizde kapatılamazlar. Genellikle yalnızca sizin tarafınızdan yapılan ve gizlilik tercihlerinizi ayarlama, oturum açma veya form doldurma gibi hizmet taleplerine karşılık olarak ayarlanırlar. Tarayıcınızı bu çerezleri engelleyecek şekilde ayarlayabilirsiniz, ancak bu durumda sitenin bazı bölümleri çalışmayabilir.</p>
+                
+                <h3>2.2. Performans Çerezleri</h3>
+                <p>Bu çerezler, ziyaretçilerin web sitemizi nasıl kullandığı hakkında bilgi toplamamıza olanak tanır. Örneğin, hangi sayfaların en çok ziyaret edildiğini ve ziyaretçilerin sitede nasıl gezindiğini anlamamıza yardımcı olurlar. Bu çerezlerin topladığı tüm bilgiler anonimdir. Bu çerezleri kabul etmezseniz, ziyaretinizi izleyemeyiz ve sitenin performansını izleyemeyiz.</p>
+                
+                <h3>2.3. İşlevsellik Çerezleri</h3>
+                <p>Bu çerezler, web sitemizin gelişmiş işlevsellik ve kişiselleştirme sunmasına olanak tanır. Bunlar tarafımızca veya web sitemize eklediğimiz üçüncü taraf hizmet sağlayıcıları tarafından ayarlanabilir. Bu çerezleri engellerseniz, bu hizmetlerin bazıları veya tümü düzgün çalışmayabilir.</p>
+                
+                <h3>2.4. Hedefleme/Reklam Çerezleri</h3>
+                <p>Bu çerezler, reklam ortaklarımız tarafından web sitemiz aracılığıyla ayarlanabilir. Bu şirketler, ilgi alanlarınıza göre profil oluşturmak ve diğer sitelerde ilgili reklamları göstermek için bunları kullanabilir. Doğrudan kişisel bilgilerinizi depolamazlar, ancak tarayıcınızı ve internet cihazınızı benzersiz şekilde tanımaya dayanırlar. Bu çerezleri engellerseniz, daha az hedefli reklam görürsünüz.</p>
+                
+                <h2>3. Web Sitemizde Kullanılan Çerezler</h2>
+                <p>Aşağıdaki tablo, web sitemizde kullanılan belirli çerezleri ve bunların amaçlarını listelemektedir:</p>
+                
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Çerez Adı</th>
+                            <th>Tür</th>
+                            <th>Amaç</th>
+                            <th>Süre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cookieConsent</td>
+                            <td>Zorunlu</td>
+                            <td>Çerez tercihlerinizi saklar</td>
+                            <td>1 yıl</td>
+                        </tr>
+                        <tr>
+                            <td>sessionID</td>
+                            <td>Zorunlu</td>
+                            <td>Oturum bilgilerinizi saklar</td>
+                            <td>Oturum</td>
+                        </tr>
+                        <tr>
+                            <td>_ga</td>
+                            <td>Performans</td>
+                            <td>Google Analytics tarafından kullanıcıları ayırt etmek için kullanılır</td>
+                            <td>2 yıl</td>
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>Performans</td>
+                            <td>Google Analytics tarafından kullanıcıları ayırt etmek için kullanılır</td>
+                            <td>24 saat</td>
+                        </tr>
+                        <tr>
+                            <td>_gat</td>
+                            <td>Performans</td>
+                            <td>Google Analytics tarafından istek oranını düşürmek için kullanılır</td>
+                            <td>1 dakika</td>
+                        </tr>
+                        <tr>
+                            <td>userPreferences</td>
+                            <td>İşlevsellik</td>
+                            <td>Kullanıcı tercihlerini saklar (örn. dil, tema)</td>
+                            <td>1 yıl</td>
+                        </tr>
+                        <tr>
+                            <td>_fbp</td>
+                            <td>Hedefleme/Reklam</td>
+                            <td>Facebook tarafından reklam hedefleme için kullanılır</td>
+                            <td>3 ay</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>4. Üçüncü Taraf Çerezleri</h2>
+                <p>Web sitemizde, analiz, reklam ve sosyal medya özellikleri gibi hizmetleri sağlamak için üçüncü taraf çerezleri de kullanıyoruz. Bu üçüncü taraflar, sizin hakkınızda bilgi toplayabilir ve bu bilgileri kendi gizlilik politikalarına göre kullanabilir.</p>
+                
+                <p>Kullandığımız üçüncü taraf hizmetleri şunları içerebilir:</p>
+                <ul>
+                    <li>Google Analytics (analiz)</li>
+                    <li>Google Ads (reklam)</li>
+                    <li>Facebook Pixel (sosyal medya ve reklam)</li>
+                    <li>Twitter (sosyal medya)</li>
+                    <li>LinkedIn (sosyal medya)</li>
+                </ul>
+                
+                <p>Bu üçüncü tarafların gizlilik politikaları hakkında daha fazla bilgi için lütfen ilgili web sitelerini ziyaret edin.</p>
+                
+                <h2>5. Çerezleri Nasıl Kontrol Edebilirsiniz?</h2>
+                <p>Çoğu web tarayıcısı, çerezleri kabul etmek üzere varsayılan olarak ayarlanmıştır. Ancak, tarayıcı ayarlarınızı değiştirerek çerezleri engelleyebilir veya çerez ayarlandığında uyarı alabilirsiniz. Tarayıcınızın çerezleri nasıl yönettiğine ilişkin daha fazla bilgi için lütfen tarayıcınızın yardım bölümüne bakın.</p>
+                
+                <p>Popüler tarayıcılarda çerez ayarlarını değiştirme:</p>
+                <ul>
+                    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/tr/kb/cerezleri-etkinlestirmek-ve-devre-disi-birakmak" target="_blank">Mozilla Firefox</a></li>
+                    <li><a href="https://support.apple.com/tr-tr/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+                    <li><a href="https://support.microsoft.com/tr-tr/microsoft-edge/microsoft-edge-de-tanımlama-bilgilerini-silme-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+                </ul>
+                
+                <p>Çerezleri devre dışı bırakırsanız, web sitemizin bazı özelliklerine erişemeyebilirsiniz veya bu özellikler düzgün çalışmayabilir.</p>
+                
+                <h2>6. Değişiklikler</h2>
+                <p>Bu Çerez Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olması durumunda, web sitemizde bir bildirim yayınlayacağız veya size doğrudan bildirim göndereceğiz. Bu politikanın en son ne zaman güncellendiğini görmek için sayfanın altındaki "Son Güncelleme" tarihine bakabilirsiniz.</p>
+                
+                <h2>7. İletişim</h2>
+                <p>Bu Çerez Politikası hakkında sorularınız veya endişeleriniz varsa, lütfen aşağıdaki iletişim bilgilerini kullanarak bizimle iletişime geçin:</p>
+                <p>
+                    E-posta: privacy@nexusgame.com.tr<br>
+                    Telefon: +90 212 123 45 67<br>
+                    Adres: Levent Mahallesi, Teknoloji Caddesi No:123, 34330 Beşiktaş/İstanbul
+                </p>
+                
+                <p class="last-updated">Son Güncelleme: 20 Mart 2023</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">NEXUS</span>
+                    <span class="logo-dot"></span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Sayfalar</h3>
+                        <ul class="footer-menu">
+                            <li><a href="index.html#trends">Trendler</a></li>
+                            <li><a href="index.html#turkey">Türkiye</a></li>
+                            <li><a href="index.html#ai">Yapay Zeka</a></li>
+                            <li><a href="index.html#metaverse">Metaverse</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Kaynaklar</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Araştırmalar</a></li>
+                            <li><a href="#">Etkinlikler</a></li>
+                            <li><a href="#">Kariyer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Yasal</h3>
+                        <ul class="footer-menu">
+                            <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
+                            <li><a href="cookie-policy.html">Çerez Politikası</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">KVKK</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Bültenimize Abone Olun</h3>
+                    <p>Oyun ve teknoloji dünyasındaki son gelişmelerden haberdar olun.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="E-posta adresiniz" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 NEXUS. Tüm hakları saklıdır.
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

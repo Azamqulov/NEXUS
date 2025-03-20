@@ -1,4 +1,4 @@
-// Wait for DOM to be fully loaded
+    // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize custom cursor
     const cursor = document.querySelector(".cursor-dot")
@@ -50,6 +50,41 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000)
     })
   
+    // Cookie consent popup
+    const cookieConsent = document.getElementById("cookieConsent")
+    const acceptCookiesBtn = document.getElementById("acceptCookies")
+    const declineCookiesBtn = document.getElementById("declineCookies")
+    const closeCookieConsentBtn = document.getElementById("closeCookieConsent")
+  
+    // Check if user has already made a choice
+    const cookieChoice = localStorage.getItem("cookieConsent")
+  
+    if (cookieChoice === null) {
+      // Show cookie consent popup after a short delay
+      setTimeout(() => {
+        cookieConsent.classList.add("show")
+      }, 2000)
+    }
+  
+    // Accept cookies
+    acceptCookiesBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "accepted")
+      cookieConsent.classList.remove("show")
+      // Here you would initialize your analytics and tracking scripts
+    })
+  
+    // Decline cookies
+    declineCookiesBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "declined")
+      cookieConsent.classList.remove("show")
+      // Here you would ensure no tracking cookies are set
+    })
+  
+    // Close cookie consent
+    closeCookieConsentBtn.addEventListener("click", () => {
+      cookieConsent.classList.remove("show")
+    })
+  
     // Mobile menu toggle
     const menuToggle = document.querySelector(".menu-toggle")
     const mobileMenu = document.querySelector(".mobile-menu")
@@ -87,10 +122,14 @@ document.addEventListener("DOMContentLoaded", () => {
         glare: true,
         "max-glare": 0.2,
       })
+    } else {
+      console.warn("VanillaTilt is not defined. Make sure it's properly imported.")
     }
   
     // Initialize GSAP if available
-    if (typeof gsap !== "undefined") {
+    if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger)
+  
       // Hero animations
       gsap.from(".hero-title .line", {
         y: 100,
@@ -183,6 +222,8 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         })
       }
+    } else {
+      console.warn("GSAP and/or ScrollTrigger is not defined. Make sure they are properly imported.")
     }
   
     // Turkey map interaction
